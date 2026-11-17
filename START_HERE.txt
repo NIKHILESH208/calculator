@@ -1,0 +1,23 @@
+RISKLOT PRO - CLOUD WINDOWS INSTALLER BUILD
+
+You do NOT need Python, CMD, or Inno Setup on your computer.
+You DO need a free GitHub account and to upload these project files once.
+
+1. Visit https://github.com/new and create a PRIVATE repository named RiskLotPro.
+2. On your new repository, choose "uploading an existing file" (Add file > Upload files).
+3. Upload the CONTENTS of this RiskLotPro_MT5 folder to the repository ROOT.
+   IMPORTANT: GitHub's browser uploader may not retain hidden .github folders reliably.
+   Check that .github/workflows/build-windows.yml exists in the repository after upload.
+   If missing, use Add file > Create new file and name it exactly
+   .github/workflows/build-windows.yml, then paste its contents from this package.
+4. Open the Actions tab > Build RiskLot Pro Windows Installer > Run workflow.
+5. Wait for the run to finish successfully. Click the completed run, then download
+   RiskLotPro-Windows-Installer under Artifacts.
+6. Extract that downloaded artifact ZIP and double-click RiskLotPro_Setup.exe.
+7. Follow the installation prompts. A desktop shortcut will be created.
+
+NOTE: This project has NOT been tested on Windows or with a real MT5 account.
+GitHub's Windows runner will compile it, but compilation does not prove it works
+correctly with your FundedNext terminals. Verify all lot calculations on demo.
+Windows may show a SmartScreen warning because the installer is unsigned.
+Never disable antivirus protections or bypass a warning without verifying the file.
